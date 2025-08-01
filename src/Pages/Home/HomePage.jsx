@@ -15,7 +15,7 @@ import {
 import { MdWeb } from 'react-icons/md';
 import './HomePage.css';
 
-import videoBg from '../../assets/images/video-home-hola.mp4';
+import videoBg from '../../assets/images/video-home.mp4';
 
 import partner1 from '../../assets/images/Partners/Partner1.png';
 import partner2 from '../../assets/images/Partners/Partner2.png';
