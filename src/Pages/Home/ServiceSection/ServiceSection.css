@@ -1,0 +1,246 @@
+/* src/pages/Services/Services.css */
+
+/* Fonts and colors can be defined in a parent stylesheet or directly here */
+:root {
+  --primary-blue: #007bff;
+  --primary-blue-dark: #0056b3;
+  --text-color-light: #f8fafc;
+  --text-color-dark: #aebacd;
+  --bg-color-dark: #0f172a;
+  --bg-color-light: #ffffff;
+  --border-color-light: #e2e8f0;
+  --box-shadow-light: rgba(0, 0, 0, 0.1);
+  --box-shadow-blue: rgba(0, 123, 255, 0.3);
+  --font-family: 'Inter', sans-serif;
+}
+
+/* Main Section */
+.our-services-section {
+  padding: 3rem 1rem; /* Reduced padding for a more compact height */
+  background-color: var(--bg-color-light);
+  font-family: var(--font-family);
+  color: var(--bg-color-dark);
+}
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 2rem; /* Reduced margin */
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.section-header .subheading {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--primary-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.section-header .heading {
+  font-size: 2rem; /* Slightly smaller font for a tighter fit */
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.8rem; /* Reduced margin */
+  color: var(--bg-color-dark);
+}
+
+.section-header .description {
+  font-size: 0.875rem; /* Reduced font size as requested */
+  color: #64748b;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5; /* Reduced line height */
+}
+
+/* Main Content Container */
+.services-container {
+  display: flex;
+  background-color: #f8fafc;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 15px -3px var(--box-shadow-light), 0 4px 6px -2px var(--box-shadow-light);
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* Left Sidebar - Service Tabs */
+.services-sidebar {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 30%;
+  padding: 1rem; /* Reduced padding */
+  background-color: #f1f5f9;
+  border-right: 1px solid var(--border-color-light);
+}
+
+.services-sidebar .service-tab {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem; /* Reduced gap */
+  padding: 0.8rem 1rem; /* Reduced padding */
+  margin-bottom: 0.4rem; /* Reduced margin */
+  border-radius: 0.75rem;
+  border: none;
+  background: none;
+  color: #64748b;
+  font-size: 0.95rem; /* Slightly smaller font */
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  white-space: nowrap;
+}
+
+.services-sidebar .service-tab:hover {
+  background-color: #e2e8f0;
+  color: var(--bg-color-dark);
+}
+
+.services-sidebar .service-tab.active {
+  background-color: var(--primary-blue);
+  color: var(--text-color-light);
+  box-shadow: 0 4px 6px -1px var(--box-shadow-blue), 0 2px 4px -1px var(--box-shadow-blue);
+}
+
+.services-sidebar .service-tab .icon-wrapper {
+  font-size: 1.25rem; /* Reduced icon size */
+}
+
+/* Right Content Area - Service Details */
+.service-details-content {
+  flex-grow: 1;
+  padding: 2rem; /* Increased padding to give more visual weight to the details section */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service-details-content .details-header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem; /* Reduced gap */
+  margin-bottom: 0.8rem; /* Reduced margin */
+  color: var(--primary-blue);
+}
+
+.service-details-content .details-header .icon-wrapper-header {
+  font-size: 1.8rem; /* Reduced font size */
+  padding: 0.4rem;
+  background-color: var(--primary-blue);
+  color: var(--text-color-light);
+  border-radius: 0.5rem;
+}
+
+.service-details-content .details-title {
+  font-size: 1.5rem; /* Reduced font size */
+  font-weight: 700;
+  color: var(--bg-color-dark);
+}
+
+.service-details-content .details-description {
+  font-size: 0.875rem; /* Reduced font size as requested */
+  color: #64748b;
+  line-height: 1.5; /* Reduced line height */
+  margin-bottom: 1.5rem; /* Reduced margin */
+  width: 80%;
+}
+
+.service-details-content .details-image-container {
+  border-radius: 1rem;
+  overflow: hidden;
+  margin-bottom: 1.5rem; /* Increased margin for more space below the image */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  width: 650px;
+  height: 350px;
+  object-fit: cover;
+}
+
+.service-details-content .details-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* CTA Button */
+.view-details-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem; /* Reduced gap */
+  padding: 0.7rem 1.8rem; /* Reduced padding */
+  font-weight: 700;
+  border-radius: 9999px;
+  background: linear-gradient(to right, var(--primary-blue), #00aaff);
+  color: white;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 12px 20px -4px rgba(0, 0, 0, 0.2), 0 5px 10px -3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  align-self: center;
+}
+
+.view-details-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+.view-details-button .button-icon {
+  width: 1rem; /* Reduced icon size */
+  height: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .services-container {
+    flex-direction: column;
+  }
+  
+  .services-sidebar {
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-right: none;
+    border-bottom: 1px solid var(--border-color-light);
+    padding: 0.8rem; /* Reduced padding */
+    justify-content: center;
+  }
+
+  .services-sidebar .service-tab {
+    padding: 0.6rem 0.8rem; /* Reduced padding */
+    margin: 0.2rem; /* Reduced margin */
+    font-size: 0.9rem;
+  }
+  
+  .services-details-content {
+    padding: 1.5rem 1rem; /* Reduced padding */
+  }
+
+  .section-header .heading {
+    font-size: 1.8rem; /* Reduced font size */
+  }
+}
+
+@media (max-width: 768px) {
+  .services-sidebar .service-tab .tab-title {
+    display: none;
+  }
+
+  .services-sidebar .service-tab {
+    gap: 0;
+    padding: 0.4rem; /* Reduced padding */
+  }
+  
+  .services-sidebar .service-tab .icon-wrapper {
+    font-size: 1.1rem; /* Adjusted icon size */
+  }
+  
+  .service-details-content .details-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

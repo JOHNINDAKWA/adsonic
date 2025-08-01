@@ -1,0 +1,155 @@
+.footer {
+  background: linear-gradient(180deg, #001e50 0%, #003785 100%);
+  color: white;
+  padding: 60px 30px 30px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.footer-about {
+  flex: 1;
+  min-width: 280px;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.footer-about p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #cbd5e1;
+}
+
+.footer-contact p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0;
+  color: #dbeafe;
+  font-size: 0.95rem;
+}
+
+.footer-contact a {
+  display: inline-block;
+  margin-top: 12px;
+  font-size: 1.3rem;
+  color: #3b82f6;
+  transition: 0.3s ease;
+}
+
+.footer-contact a:hover {
+  color: #60a5fa;
+}
+
+.footer-services {
+  flex: 1;
+  min-width: 280px;
+}
+
+.footer-services h4 {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+  color: #ffffff;
+}
+
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px 16px;
+}
+.footer-social-icons{
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.service-btn,
+.contact-btn {
+  background-color: #0f172a;
+  color: white;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 999px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+  text-align: left;
+}
+
+.service-btn:hover {
+  background-color: #1e293b;
+}
+
+.contact-btn {
+  background-color: #10b981;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  justify-content: center;
+}
+
+.contact-btn:hover {
+  background-color: #059669;
+}
+
+.footer-bottom {
+  margin-top: 50px;
+  border-top: 1px solid #334155;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 0.85rem;
+  color: #9ca3af;
+    max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+
+.footer-bottom a {
+  margin-left: 20px;
+  color: #9ca3af;
+  text-decoration: none;
+}
+
+.footer-bottom a:hover {
+  color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+  }
+
+  .service-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+  }
+
+  .footer-bottom a {
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,176 @@
+/* src/components/Navbar/Navbar.css */
+
+.navbar-container {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: transparent;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Add white background and black text when scrolled */
+.navbar-container.scrolled {
+  background-color: white;
+  color: black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Make sure links and icons also adjust their color */
+.navbar-container.scrolled .nav-link,
+.navbar-container.scrolled .navbar-brand,
+.navbar-container.scrolled .menu-icon {
+  color: black;
+}
+
+/* Ensure menu icon color in normal state */
+.menu-icon {
+  transition: color 0.3s ease;
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+}
+
+.navbar-brand {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: black;
+}
+
+.navbar-links-desktop {
+  display: none;
+  align-items: center;
+  gap: 2rem;
+  color: black;
+}
+
+@media (min-width: 1024px) {
+  .navbar-links-desktop {
+    display: flex;
+  }
+}
+
+.nav-link {
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #60a5fa; /* blue-400 */
+}
+
+.contact-button {
+  background-color: #2563eb; /* blue-600 */
+  color: white;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px; /* full rounded */
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.contact-button:hover {
+  background-color: #1d4ed8; /* blue-700 */
+}
+
+.contact-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.navbar-menu-mobile {
+  display: flex;
+}
+
+@media (min-width: 1024px) {
+  .navbar-menu-mobile {
+    display: none;
+  }
+}
+
+.menu-toggle-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-icon {
+  width: 2rem;
+  height: 2rem;
+  color: #000;
+}
+
+.mobile-menu-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 40;
+  background-color: rgba(17, 24, 39, 0.95); /* gray-900 with opacity */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  animation: fadeInDown 0.3s ease-out;
+}
+
+.close-menu-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.mobile-link {
+  font-size: 1.5rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.mobile-link:hover {
+  color: #60a5fa; /* blue-400 */
+}
+
+.mobile-contact-button {
+  background-color: #2563eb; /* blue-600 */
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px; /* full rounded */
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.mobile-contact-button:hover {
+  background-color: #1d4ed8; /* blue-700 */
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
