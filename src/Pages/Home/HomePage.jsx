@@ -13,7 +13,7 @@ import {
   FaCloud,
 } from 'react-icons/fa';
 import { MdWeb } from 'react-icons/md';
-import './Home.css';
+import './HomePage.css';
 
 import videoBg from '../../assets/images/video-home-hola.mp4';
 
@@ -50,7 +50,7 @@ const services = [
   { icon: <FaCloud />, title: "Cloud" },
 ];
 
-const Home = () => {
+const HomePage = () => {
   // Array of partner images for the marquee
   const partnerImages = [
     { src: partner1, alt: "Partner 1" },
@@ -133,4 +133,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default HomePage;
