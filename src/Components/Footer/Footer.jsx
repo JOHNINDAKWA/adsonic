@@ -22,8 +22,8 @@ const Footer = () => {
           </p>
 
           <div className="footer-contact">
-            <p><FaPhoneAlt /> (+254) 712 345 678</p>
-            <p><FaEnvelope /> info@adsonic.co.ke</p>
+            <p><FaPhoneAlt /> (+254) 716 016706</p>
+            <p><FaEnvelope /> info@adsonicdigitalagency.co.ke</p>
             <p><FaMapMarkerAlt /> 5th Floor, Plaza Hub, Nairobi, Kenya</p>
             <div className="footer-social-icons">
             <a href="https://linkedin.com" target="_blank" rel="noreferrer"><FaLinkedin /></a>
